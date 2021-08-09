@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build --no-cache -t dragas/debianservice .'
+        sh 'docker build --no-cache -t dragas/debianservice .'
       }
     }
 
