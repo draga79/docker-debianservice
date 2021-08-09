@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Push to DockerHub') {
+      steps {
+        sh 'docker push dragas/debianservice'
+      }
+    }
+
   }
 }
